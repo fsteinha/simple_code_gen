@@ -10,7 +10,7 @@ class CodeGen
   end
   
   #virtual
-  def declaration ( port )
+  def set_port_declaration ( port )
     raise ( "Error: virtual method!!")
   end
   
@@ -34,6 +34,40 @@ class CodeGen
     raise ( "Error: virtual method!!")
   end
 
+  #virtual
+  def _return(value)
+    raise ( "Error: virtual method!!")
+  end
+
+  #virtual
+  def comment(comment)
+    raise ( "Error: virtual method!!")
+  end
+
+  #virtual
+  def comment_bock(a_comment, page_width)
+    raise ( "Error: virtual method!!")
+  end
+
+  #virtual
+  def set_constant(constant_name, value)
+    raise ( "Error: virtual method!!")
+  end
+
+  #virtual
+  def set_constant(constant_name, value)
+    raise ( "Error: virtual method!!")
+  end
+
+  #virtual
+  def const_true(constant_name, value)
+    raise ( "Error: virtual method!!")
+  end
+
+  #virtual
+  def const_false(constant_name, value)
+    raise ( "Error: virtual method!!")
+  end
 
   def _write(content)
     ret = ""
@@ -42,7 +76,7 @@ class CodeGen
     return ret
   end
   
-  def _puts(content)
+  def _puts(content='')
     return _write(content + "\n")
   end
   
