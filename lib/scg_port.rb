@@ -1,5 +1,4 @@
 require "rubygems"
-require "simple-random"
 
 class Port
   attr_reader:name 
