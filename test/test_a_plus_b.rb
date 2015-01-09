@@ -1,10 +1,8 @@
-$: << File.expand_path( '.' )
-$: << File.expand_path( '../lib' )
+#$: << File.expand_path( '.' )
+#$: << File.expand_path( '../lib' )
 
-require "scg_unit"
-require "scg_module"
-require "scg_unit_test_c"
-require "scg_build_cc"
+require "rubygems"
+require "scg"
 
 
 unit_a_plus_b = Unit.new( 'iAPlusB' )                        # new unit
